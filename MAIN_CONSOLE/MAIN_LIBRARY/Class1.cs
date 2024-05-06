@@ -23,24 +23,20 @@ namespace MAIN_LIBRARY
         private string _name;
         private double _salary;
         private Podrozdelenie _podrozdelenie;
-
         public string Name
         {
             set { _name = value; }
             get { return _name; }
         }
-
         public double Salary
         {
             set
             {
                 if (value >= 0) { _salary = value; }
                 else { throw new ArgumentOutOfRangeException(); }
-
             }
             get { return _salary; }
         }
-
         public Doljnost(string name, double salary, Podrozdelenie podrozdelenie)
         {
             Name = name;
@@ -48,7 +44,6 @@ namespace MAIN_LIBRARY
             _podrozdelenie = podrozdelenie;
         }
     }
-
     /// <summary>
     /// Класс Студент
     /// Вариант 5
@@ -90,7 +85,6 @@ namespace MAIN_LIBRARY
             _group1 = group1;
         }
     }
-
     /// <summary>
     /// Класс Аудитория
     /// Вариант 2
@@ -126,7 +120,6 @@ namespace MAIN_LIBRARY
             _Windows = windows;
         }
     }
-
     /// <summary>
     /// Класс Подразделение
     /// Вариант 11
@@ -137,25 +130,21 @@ namespace MAIN_LIBRARY
         private string _nazvanie;
         private string _rukovoditel;
         private Organizaciya _organizaciya;
-
         public string Nazvanie
         {
             get { return _nazvanie; }
             set { _nazvanie = value; }
         }
-
         public string Rukovoditel
         {
             get { return _rukovoditel; }
             set { _rukovoditel = value; }
         }
-
         public Organizaciya Organizaciya
         {
             get { return _organizaciya; }
             set { _organizaciya = value; }
         }
-
         public Podrozdelenie(string nazvanie, string rukovoditel, Organizaciya organizaciya)
         {
             Nazvanie = nazvanie;
@@ -163,7 +152,6 @@ namespace MAIN_LIBRARY
             Organizaciya = organizaciya;
         }
     }
-
     /// <summary>
     /// Класс организация
     /// Вариант 12
@@ -174,7 +162,6 @@ namespace MAIN_LIBRARY
         private string _nazvanie;
         private string _yuridicheskiyAdres;
         private string _fakticheskiyAdres;
-
         public Organizaciya(string nazvanie, string yuridicheskiyAdres, string fakticheskiyAdres)
         {
             _nazvanie = nazvanie;
@@ -182,7 +169,6 @@ namespace MAIN_LIBRARY
             _fakticheskiyAdres = fakticheskiyAdres;
         }
     }
-
     /// <summary>
     /// Класс Группа
     /// Вариант 4
@@ -195,7 +181,6 @@ namespace MAIN_LIBRARY
         private string _chislennost;
         private int _godpostuplenija;
         private Sotrudnic _sotrudnic = new Sotrudnic();
-
         public string Nazvanie
         {
             get { return _nazvanie; }
@@ -229,7 +214,6 @@ namespace MAIN_LIBRARY
             _sotrudnic = sotrudnic;
         }
     }
-
     /// <summary>
     /// Класс дисциплина
     /// Вариант 3
@@ -246,7 +230,6 @@ namespace MAIN_LIBRARY
             this.reduction = reduction;
         }
     }
-
     /// <summary>
     /// Класс корпус
     /// Вариант 13
@@ -267,7 +250,6 @@ namespace MAIN_LIBRARY
             Org = "-";
         }
     }
-
     /// <summary>
     /// Класс смена
     /// Вариант 8
@@ -284,7 +266,6 @@ namespace MAIN_LIBRARY
         {
         }
     }
-
     /// <summary>
     /// Класс Вид Занятий
     /// Вариант 14
@@ -298,7 +279,6 @@ namespace MAIN_LIBRARY
             Name = name;
         }
     }
-
     /// <summary>
     /// Класс Пара
     /// вариант 7
@@ -311,7 +291,6 @@ namespace MAIN_LIBRARY
         private DateTime StartChill;
         private DateTime EndChill;
         private Smena Smena = new Smena();
-
         public DateTime ParaStart
         {
             get
@@ -356,7 +335,6 @@ namespace MAIN_LIBRARY
                 EndChill = value;
             }
         }
-
         public Para(DateTime startpara, DateTime endpara, DateTime startchill, DateTime endchill, Smena smena)
         {
             StartPara = startpara;
@@ -376,7 +354,6 @@ namespace MAIN_LIBRARY
         {
         }
     }
-
     /// <summary>
     /// Класс Сотрудник 
     /// Вариант 9
